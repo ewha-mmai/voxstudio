@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Seeing What You Say: Expressive Image Generation from Speech">
+  <meta name="keywords" content="Speech-to-image generation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VoxStudio</title>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="stylesheet" href="./static/css/slide.css">
+  <link rel="icon" href="">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+
+  #topText {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+  }
+
+  </style>
+
+
+</head>
+<body>
+
+<!-- <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="/">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+    </div>
+
+  </div>
+</nav> -->
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-3 publication-title">Seeing What You Say: Expressive Image Generation from Speech</h1>
+          <h1 class="title is-3 publication-title">Anonymous ICCV submission</h1>
+          <!-- <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href=""></a><sup></sup>&emsp;
+            </span>
+          </div> -->
+
+          <br/>
+          <div class="is-size-5 publication-authors">
+            
+          </div>
+          <br/>
+
+          
+
+          <!-- <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>&ensp;
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span>
+            </div>
+
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img class="content"  width="100%" src="./static/images/example-1.png">
+      <div class="content has-text-centered">
+        <b> Example</b>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            This paper proposes a unified end-to-end speech-to-image model, <b>VoxStudio</b>, the first attempt to express an image directly from a spoken description by aligning both linguistic and paralinguistic information.
+            We eliminate the need for an additional speech-to-text module, which often ignores the hidden details beyond text, \eg, tone or emotion.
+            To further advance this direction, we introduce a new emotional speech and image dataset, VoxEmoset, that pairs emotional speech synthesized with corresponding visual scenes, enabling training and evaluation of both semantic and affective aspects of speech-to-image generation. 
+            Comprehensive experiments on the SpokenCOCO, Flikr8kAudio, and VoxEmoset benchmarks demonstrate the feasibility of our method and highlight key challenges, including emotional consistency and linguistic ambiguity, paving the way for future research.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    </br>
+    
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        
+      
+      <h2 class="title is-3">Generation results</h2>
+
+      <div class="content has-text-justified">
+        <h4 class="title is-5">Case A</h4>
+        blahblah.
+      </div>
+
+      </br>
+
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+  
+    <pre><code>@inproceedings{voxstudio,
+  author    = {Anonymous Authors},
+  title     = {VoxStudio},
+  journal   = {},
+  year      = {2025},
+}</code></pre>
+  </div>
+</section>
+
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This website refers to <a href="https://nerfies.github.io">Nerfies website</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

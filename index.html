@@ -41,6 +41,11 @@
     width: 100%;
   }
 
+  #reimg {
+    width: 1024px;
+    height: 1024px;
+  }
+
   </style>
 
 
@@ -74,18 +79,18 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-3 publication-title">Seeing What You Say: Expressive Image Generation from Speech</h1>
-          <h1 class="title is-3 publication-title">Anonymous ICCV submission</h1>
+          <h4 class="title is-5 publication-authors">Anonymous</h4>
           <!-- <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href=""></a><sup></sup>&emsp;
             </span>
           </div> -->
 
-          <br/>
-          <div class="is-size-5 publication-authors">
+          <!-- <br/> -->
+          <!-- <div class="is-size-5 publication-authors">
             
-          </div>
-          <br/>
+          </div> -->
+          <!-- <br/> -->
 
           
 
@@ -118,69 +123,350 @@
   </div>
 </section>
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img class="content"  width="100%" src="./static/images/example-1.png">
-      <div class="content has-text-centered">
-        <b> Example</b>
-        
-      </div>
-    </div>
-  </div>
-</section>
+
 
 
 <section class="section">
   <div class="container is-max-desktop">
+    <div class="columns">
+      <div class="column" style="margin-bottom: 0.5cm; margin-top:-1.5cm">
+        <img src="static/images/teaser.jpg"/>
+        <h2 class="subtitle has-text-centered">
+          VoxStudio generates expressive images from speech prompts.
+        </h2>
+      </div>
+    </div>
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            This paper proposes a unified end-to-end speech-to-image model, <b>VoxStudio</b>, the first attempt to express an image directly from a spoken description by aligning both linguistic and paralinguistic information.
-            We eliminate the need for an additional speech-to-text module, which often ignores the hidden details beyond text, \eg, tone or emotion.
+            This paper proposes a unified end-to-end speech-to-image model, VoxStudio, the first attempt to generate an expressive image directly from a spoken description by aligning both linguistic and paralinguistic information.
+            We eliminate the need for an additional speech-to-text module, which often ignores the hidden details beyond text, e.g., tone or emotion.
             To further advance this direction, we introduce a new emotional speech and image dataset, VoxEmoset, that pairs emotional speech synthesized with corresponding visual scenes, enabling training and evaluation of both semantic and affective aspects of speech-to-image generation. 
-            Comprehensive experiments on the SpokenCOCO, Flikr8kAudio, and VoxEmoset benchmarks demonstrate the feasibility of our method and highlight key challenges, including emotional consistency and linguistic ambiguity, paving the way for future research.
+            Comprehensive experiments on the SpokenCOCO, Flickr8kAudio, and VoxEmoset benchmarks demonstrate the feasibility of our method and highlight key challenges, including emotional consistency and linguistic ambiguity, paving the way for future research.
           </p>
         </div>
       </div>
     </div>
-    
-    </br>
-    
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-full-width">
-        
-      
-      <h2 class="title is-3">Generation results</h2>
-
-      <div class="content has-text-justified">
-        <h4 class="title is-5">Case A</h4>
-        blahblah.
-      </div>
-
-      </br>
-
-      </div>
-    </div>
-  </div>
   </div>
 </section>
 
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <h2 class="title is-3 has-text-centered">VoxEmoset</h2>
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item has-text-centered">
+          <audio controls="">
+            <source src="static/images/voxemoset/woman_enjoy.wav" type="audio/wav">
+          </audio>
+          <img src="static/images/voxemoset/woman_enjoy.jpg">
+        </div>
+        <div class="item has-text-centered">
+          <audio controls="">
+            <source src="static/images/voxemoset/lion_anger.wav" type="audio/wav">
+          </audio>
+          <img src="static/images/voxemoset/lion_anger.jpg">
+        </div>
+        <div class="item has-text-centered">
+          <audio controls="">
+            <source src="static/images/voxemoset/man_sad.wav" type="audio/wav">
+          </audio>
+          <img src="static/images/voxemoset/man_sad.jpg">
+        </div>
+        <div class="item has-text-centered">
+          <audio controls="">
+            <source src="static/images/voxemoset/sing_enjoy.wav" type="audio/wav">
+          </audio>
+          <img src="static/images/voxemoset/sing_enjoy.jpg">
+        </div>
+        <div class="item has-text-centered">
+          <audio controls="">
+            <source src="static/images/voxemoset/man_fear.wav" type="audio/wav">
+          </audio>
+          <img src="static/images/voxemoset/man_fear.jpg">
+        </div>
+        <div class="item has-text-centered">
+          <audio controls="">
+            <source src="static/images/voxemoset/bin_disgust.wav" type="audio/wav">
+          </audio>
+          <img src="static/images/voxemoset/bin_disgust.jpg">
+        </div>
+        <div class="item has-text-centered">
+          <audio controls="">
+            <source src="static/images/voxemoset/house_fear.wav" type="audio/wav">
+          </audio>
+          <img src="static/images/voxemoset/house_fear.jpg">
+        </div>
+        <div class="item has-text-centered">
+          <audio controls="">
+            <source src="static/images/voxemoset/firefighter_anger.wav" type="audio/wav">
+          </audio>
+          <img src="static/images/voxemoset/firefighter_anger.jpg">
+        </div>
+        <div class="item has-text-centered">
+          <audio controls="">
+            <source src="static/images/voxemoset/statue_sad.wav" type="audio/wav">
+          </audio>
+          <img src="static/images/voxemoset/statue_sad.jpg">
+        </div>
+        <div class="item has-text-centered">
+          <audio controls="">
+            <source src="static/images/voxemoset/mask_fear.wav" type="audio/wav">
+          </audio>
+          <img src="static/images/voxemoset/mask_fear.jpg">
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <div class="has-text-centered">
+          <h2 class="title is-3">Results</h2>
+          <br><br>
+        </div>
+        <!-- <h4 class="title is-5">Same description with different emotion</h5> -->
+      </div>
+    </div>
+    
+    <div class="columns">
+      <h4 class="title is-5">VoxEmoset results</h5>
+      <br>
+    </div>
+
+    <div class="columns">
+      <div class="container">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item has-text-centered">
+            <audio controls="">
+              <source src="static/images/results/amusement_07219.wav" type="audio/wav">
+            </audio>
+            <img style="width:1024px;" src="static/images/results/amusement_07219.png">
+          </div>
+          <div class="item has-text-centered">
+            <audio controls="">
+              <source src="static/images/results/sadness_00481.wav" type="audio/wav">
+            </audio>
+            <img style="width:1024px;" src="static/images/results/sadness_00481.png">
+          </div>
+          <div class="item has-text-centered">
+            <audio controls="">
+              <source src="static/images/results/excitement_16397.wav" type="audio/wav">
+            </audio>
+            <img style="width:1024px;" src="static/images/results/excitement_16397.png">
+          </div>
+          <div class="item has-text-centered">
+            <audio controls="">
+              <source src="static/images/results/amusement_09907.wav" type="audio/wav">
+            </audio>
+            <img style="width:1024px;" src="static/images/results/amusement_09907.png">
+          </div>
+          <div class="item has-text-centered">
+            <audio controls="">
+              <source src="static/images/results/anger_01219.wav" type="audio/wav">
+            </audio>
+            <img style="width:1024px;" src="static/images/results/anger_01219.png">
+          </div>
+          <div class="item has-text-centered">
+            <audio controls="">
+              <source src="static/images/results/disgust_07395.wav" type="audio/wav">
+            </audio>
+            <img style="width:1024px;" src="static/images/results/disgust_07395.png">
+          </div>
+          <div class="item has-text-centered">
+            <audio controls="">
+              <source src="static/images/results/fear_00537.wav" type="audio/wav">
+            </audio>
+            <img style="width:1024px;" src="static/images/results/fear_00537.png">
+          </div>
+          <div class="item has-text-centered">
+            <audio controls="">
+              <source src="static/images/results/sadness_03310.wav" type="audio/wav">
+            </audio>
+            <img style="width:1024px;" src="static/images/results/sadness_03310.png">
+          </div>
+          <div class="item has-text-centered">
+            <audio controls="">
+              <source src="static/images/results/fear_06953.wav" type="audio/wav">
+            </audio>
+            <img style="width:1024px;" src="static/images/results/fear_06953.png">
+          </div>
+          <div class="item has-text-centered">
+            <audio controls="">
+              <source src="static/images/results/sadness_12294.wav" type="audio/wav">
+            </audio>
+            <img style="width:1024px;" src="static/images/results/sadness_12294.png">
+          </div>
+          <div class="item has-text-centered">
+            <audio controls="">
+              <source src="static/images/results/disgust_10570.wav" type="audio/wav">
+            </audio>
+            <img style="width:1024px;" src="static/images/results/disgust_10570.png">
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <br><br><br>
+    <div class="columns">
+      <h4 class="title is-5">Comparison with text prompts</h5>
+    </div>
+
+    <div class="item">
+      <div class="columns has-text-centered is-vcentered">
+        <div class="column has-text-centered">
+          <p>Example 1</p>
+          <audio controls="">
+            <source src="static/images/results/amusement_02922.wav" type="audio/wav">
+          </audio>
+        </div>
+        <div class="column">
+          <p>Text (SD-zero-shot)</p>
+          <img src="static/images/results/amusement_02922_zs.png">
+        </div>
+        <div class="column">
+          <p>Text (SD-finetuning)</p>
+          <img src="static/images/results/amusement_02922_ft.png">
+        </div>
+        <div class="column">
+          <p>Speech (VoxStudio)</p>
+          <img src="static/images/results/amusement_02922_ours.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="columns has-text-centered is-vcentered">
+        <div class="column has-text-centered">
+          <p>Example 2</p>
+          <audio controls="">
+            <source src="static/images/results/fear_04243.wav" type="audio/wav">
+          </audio>
+        </div>
+        <div class="column">
+          <p>Text (SD-zero-shot)</p>
+          <img src="static/images/results/fear_04243_zs.png">
+        </div>
+        <div class="column">
+          <p>Text (SD-finetuning)</p>
+          <img src="static/images/results/fear_04243_ft.png">
+        </div>
+        <div class="column">
+          <p>Speech (VoxStudio)</p>
+          <img src="static/images/results/fear_04243_ours.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="columns has-text-centered is-vcentered">
+        <div class="column has-text-centered">
+          <p>Example 3</p>
+          <audio controls="">
+            <source src="static/images/results/disgust_07760.wav" type="audio/wav">
+          </audio>
+        </div>
+        <div class="column">
+          <p>Text (SD-zero-shot)</p>
+          <img src="static/images/results/disgust_07760_zs.png">
+        </div>
+        <div class="column">
+          <p>Text (SD-finetuning)</p>
+          <img src="static/images/results/disgust_07760_ft.png">
+        </div>
+        <div class="column">
+          <p>Speech (VoxStudio)</p>
+          <img src="static/images/results/disgust_07760_ours.png">
+        </div>
+      </div>
+    </div>
+
+
+    <br><br><br>
+    <div class="columns">
+      <h4 class="title is-5">Same description with different emotion</h5>
+    </div>
+
+
+    <div class="columns is-centered">
+        
+      <div class="column">
+        <div class="content">
+          <p>Case 1: 😄 Enjoyment vs. 😭 Sadness</p>
+          <div class="columns has-text-centered">
+
+            <div class="column">
+              <div class="is-vcentered">
+                <audio controls="">
+                  <source src="static/images/results/dog_enjoyment.wav" type="audio/wav">
+                </audio>
+                <img src="static/images/results/dog_enjoy.png"/>
+              </div>
+            </div>
+            <div class="column">
+              <div class="is-vcentered">
+                <audio controls="">
+                  <source src="static/images/results/dog_sadness.wav" type="audio/wav">
+                </audio>
+                <img src="static/images/results/dog_sad.png"/>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="column">
+        <div class="content">
+          <p>Case 2: 🤮 Disgust vs. 😄 Enjoyment</p>
+          <div class="columns has-text-centered">
+            
+            <div class="column">
+              <div class="is-vcentered">
+                <audio controls="">
+                  <source src="static/images/results/cake_disgust.wav" type="audio/wav">
+                </audio>
+                <img src="static/images/results/cake_disgust.png"/>
+              </div>
+            </div>
+            <div class="column">
+              <div class="is-vcentered">
+                <audio controls="">
+                  <source src="static/images/results/cake_enjoyment.wav" type="audio/wav">
+                </audio>
+                <img src="static/images/results/cake_enjoy.png"/>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- <section class="section" id="BibTeX">
+  <div class="container content">
     <h2 class="title">BibTeX</h2>
   
     <pre><code>@inproceedings{voxstudio,
   author    = {Anonymous Authors},
-  title     = {VoxStudio},
-  journal   = {},
+  title     = {Seeing What You Say: Expressive Image Generation from Speech},
   year      = {2025},
 }</code></pre>
   </div>
-</section>
+</section> -->
 
 
 
